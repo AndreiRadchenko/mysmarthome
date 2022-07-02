@@ -3,18 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Розумний дім – комфорт доступний кожному</title>
     <link rel="icon" href="./images/svg/smart-home.svg" sizes="32x32" />
   </head>
   <body>
     <!-- -------------- header ----------------- -->
     <header class="header">
-      <div class="container"></div>
+      <div class="container">
+        <a href="" class="logo">
+          <svg class="logo__svg">
+            <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
+          </svg>
+          <p class="logo__text">розумний<span class="logo__text--accent">дім</span></p>
+        </a>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item"><a href="./index.html" class="menu__link">Головна</a></li>
+            <li class="menu__item"><a href="./about.html" class="menu__link">Про нас</a></li>
+            <li class="menu__item"><a href="./services.html" class="menu__link">Послуги</a></li>
+            <li class="menu__item"><a href="./gallery.html" class="menu__link">Відео</a></li>
+            <li class="menu__item"><a href="./contacts.html" class="menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menue">
+          <svg class="hamburger" width="40" height="40">
+            <use href="./images/svg/icomoon/symbol-defs.svg#icon-hamburger"></use>
+          </svg>
+          <svg class="cross" width="40" height="40">
+            <use href="./images/svg/icomoon/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
     </header>
     <main>
       <!-- -------------- hero ----------------- -->
-      <section class="hero__main-hero">
+      <section class="hero hero--main">
         <div class="container">
           <h1 class="header-title">Проектування і встановлення систем розумного дому</h1>
           <p class="section-text section-text--white">
@@ -36,7 +60,7 @@
           </p>
           <ul class="offers">
             <li class="offers__item">
-              <h2 class="offers__header">Консультації.</h2>
+              <h3 class="offers__header">Консультації.</h3>
               <p class="section-text section-text--white">
                 Онлайн консультації. Виїзд до замовника (Київ, Київська обл.) Демонстрація робочих
                 автоматизацій.
@@ -46,7 +70,7 @@
               >
             </li>
             <li class="offers__item">
-              <h2 class="offers__header">Проект.</h2>
+              <h3 class="offers__header">Проект.</h3>
               <p class="section-text section-text--white">
                 Проектування, складання специфікації, підбір і замовлення обладнання.
               </p>
@@ -55,7 +79,7 @@
               >
             </li>
             <li class="offers__item">
-              <h2 class="offers__header">Інтеграція.</h2>
+              <h3 class="offers__header">Інтеграція.</h3>
               <p class="section-text section-text--white">
                 Встановлення і налаштування приладів розумного дому. Інсталяція серверу, створення
                 автоматизацій і графічного інтерфейсу.
@@ -112,6 +136,27 @@
       </section>
     </main>
     <!-- -------------- footer ----------------- -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="" class="logo">
+          <svg class="logo__svg">
+            <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
+          </svg>
+          <p class="logo__text">розумний<span class="logo__text--accent">дім</span></p>
+        </a>
+        <h2 class="moto">Розумний дім – комфорт доступний кожному</h2>
+        <div class="media">
+          <h3 class="media__title">Наші медіа</h3>
+          <div class="media__group">
+            <svg class="youtube" width="55" height="55">
+              <use href="./images/svg/icomoon/symbol-defs.svg#icon-youtube"></use>
+            </svg>
+            <svg class="facebook" width="60" height="60">
+              <use href="./images/svg/icomoon/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

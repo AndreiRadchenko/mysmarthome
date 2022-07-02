@@ -4,24 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Розумний дім – комфорт доступний кожному</title>
+    <link rel="icon" href="./images/svg/smart-home.svg" sizes="32x32" />
   </head>
   <body>
     <!-- -------------- header ----------------- -->
     <header class="header"></header>
     <main>
       <!-- -------------- hero ----------------- -->
-      <section class="hero">
-        <div class="container"></div>
+      <section class="hero hero-contacts">
+        <div class="container">
+          <h2 class="header-title">На зв'язку!</h2>
+        </div>
       </section>
       <!-- -------------- contacts ----------------- -->
       <section class="section">
-        <div class="container"></div>
+        <div class="container">
+          <h3 class="section-title">Наші контакти</h3>
+          <p class="section-text">
+            Будьласка, зв’яжіться з нами у зручний для Вас спосіб. Viber, telegram, whatsapp,
+            messenger, телефонний дзвінок чи email – ми на зв’язку і допоможемо Вам зорієнтуватись у
+            темі розумного дому.
+          </p>
+          <a href="" class="button-link"
+            ><span class="button-text button-text--white">Телефонуйте</span></a
+          >
+          <ul class="social">
+            <li class="social__item"><a href="" class="social__link"></a></li>
+            <li class="social__item"><a href="" class="social__link"></a></li>
+            <li class="social__item"><a href="" class="social__link"></a></li>
+            <li class="social__item"><a href="" class="social__link"></a></li>
+          </ul>
+        </div>
       </section>
       <!-- -------------- request form ----------------- -->
       <section class="section">
-        <div class="container"></div>
-        <form action="" class="request-form"></form>
+        <div class="container">
+          <h3 class="section-title">Залиште ваш запит, ми запропонуємо рішення</h3>
+          <form action="" class="form">
+            <label for="" class="form__label-name"
+              >Ваше ім'я (обов'язково) <span class="astarisk">*</span>
+              <input type="text" class="form__name" required
+            /></label>
+            <label for="" class="form__label-email"
+              >Ваш Email (обов'язково) <span class="astarisk">*</span
+              ><input type="email" class="form__email" required
+            /></label>
+            <label for="" class="form__label-theme"
+              >Тема<input type="text" class="form__theme"
+            /></label>
+            <label for="" class="form__label-request"
+              >Ваш запит
+              <textarea name="" id="" cols="30" rows="10" class="form__request"></textarea>
+            </label>
+            <button type="submit" class="form-button">Надіслати</button>
+          </form>
+        </div>
       </section>
     </main>
     <!-- -------------- footer ----------------- -->
