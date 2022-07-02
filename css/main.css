@@ -1,0 +1,167 @@
+:root {
+  --main-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --background-blue: rgb(7, 90, 174);
+  --logo-accent: #d3e52f;
+  --accent-color: #2196f3;
+  --primary-btn-hover-color: #188ce8;
+  --background-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-background-color: #2f303a;
+  --button-background-color: #f5f4fa;
+  --gallery-border-color: #eeeeee;
+  --hero-gradient: rgba(47, 48, 58, 0.4);
+  --social-color: #afb1b8;
+  --footer-social: rgba(255, 255, 255, 0.1);
+  --specialization-bkg: rgba(47, 48, 58, 0.8);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --galery-overlay: rgba(33, 150, 243, 0.9);
+  --modal-form-border-color: rgba(33, 33, 33, 0.2);
+  --input-border-active-color: rgba(33, 150, 243, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* yeseva-one-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/yeseva-one-v20-latin_cyrillic-ext_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/yeseva-one-v20-latin_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/yeseva-one-v20-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../fonts/yeseva-one-v20-latin_cyrillic-ext_cyrillic-regular.woff") format("woff"), url("../fonts/yeseva-one-v20-latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"), url("../fonts/yeseva-one-v20-latin_cyrillic-ext_cyrillic-regular.svg#YesevaOne") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v24-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v24-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v24-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v24-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v24-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v24-latin_cyrillic-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+body {
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link, .logo {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 0;
+  color: inherit;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 480px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: setLineHeight(42px, 36px);
+    margin-bottom: 50px;
+  }
+}
+
+.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  padding: 16px 0;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+    padding: 0;
+  }
+}
+
+.logo__wrap {
+  margin-left: 10px;
+}
+
+.logo__text--accent {
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  color: var(--secondary-text-color);
+}
+
+.footer__logo {
+  color: var(--background-color);
+  margin-bottom: 20px;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

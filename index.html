@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Розумний дім – комфорт доступний кожному</title>
     <link rel="icon" href="./images/svg/smart-home.svg" sizes="32x32" />
+    <!-- Спочатку нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Потім ваші стилі -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- -------------- header ----------------- -->
     <header class="header">
       <div class="container">
         <a href="" class="logo">
-          <svg class="logo__svg">
+          <svg class="logo__svg" width="58" height="58">
             <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
           </svg>
-          <p class="logo__text">розумний<span class="logo__text--accent">дім</span></p>
+          <div class="logo__wrap">
+            <p class="logo__text">розумний</p>
+            <p class="logo__text--accent">дім</p>
+          </div>
         </a>
         <nav class="navigation">
           <ul class="menu">
@@ -139,10 +149,13 @@
     <footer class="footer">
       <div class="container footer__container">
         <a href="" class="logo">
-          <svg class="logo__svg">
+          <svg class="logo__svg" width="58" height="58">
             <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
           </svg>
-          <p class="logo__text">розумний<span class="logo__text--accent">дім</span></p>
+          <div class="logo__wrap">
+            <p class="logo__text">розумний</p>
+            <p class="logo__text--accent">дім</p>
+          </div>
         </a>
         <h2 class="moto">Розумний дім – комфорт доступний кожному</h2>
         <div class="media">
