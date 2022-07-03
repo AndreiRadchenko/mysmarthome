@@ -2,7 +2,7 @@
 
 @import './utils/variables';
 // @import './utils/visually-hiden';
-// @import './utils/mixins';
+@import './utils/mixins';
 
 // import base style
 
@@ -10,7 +10,7 @@
 
 // import components
 
-// @import './components/buttons';
+@import './components/buttons';
 @import './components/logo';
 // @import './components/social';
 // @import './components/subscribe-form';
@@ -19,8 +19,9 @@
 //  import layouts
 
 // @import './layouts/header';
-// @import './layouts/hero';
-// @import './layouts/benefits';
+@import './layouts/hero';
+@import './layouts/offers';
+@import './layouts/responses';
 // @import './layouts/specialization';
 // @import './layouts/team';
 // @import './layouts/clients';

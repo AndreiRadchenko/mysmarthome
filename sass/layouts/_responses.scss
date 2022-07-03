@@ -1,0 +1,65 @@
+.section--responses {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 480px;
+  height: 118vw;
+  min-height: 470px;
+  padding: 70px 40px;
+
+  background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)),
+    url(../images/responses/doorbell-480-min.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)),
+      url(../images/responses/doorbell-480-min.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
+      url(../images/hero-main/hero-main-768x400-min.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
+        url(../images/hero-main/hero-main-1536x800-min.jpg);
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
+      url(../images/hero-main/hero-main-1600x600-min.jpg);
+  }
+}
+.container--responses {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-title--responses {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 40px;
+}
+.responses-text {
+  font-size: 16px;
+  line-height: calc(25 / 16);
+  color: var(--secondary-text-color);
+}
+.section-text--responses {
+  position: relative;
+  color: var(--secondary-text-color);
+  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 12.7px;
+  line-height: 1;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: var(--offers-decorate-line);
+  }
+}
