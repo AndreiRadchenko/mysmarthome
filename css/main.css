@@ -5,6 +5,7 @@
   --logo-accent: #d3e52f;
   --button-hover-color: #067ae0;
   --offers-decorate-line: rgba(255, 255, 255, 0.47);
+  --section-background-color: #f3f8fb;
   --accent-color: #2196f3;
   --primary-btn-hover-color: #188ce8;
   --background-color: #ffffff;
@@ -67,7 +68,7 @@ img {
   height: auto;
 }
 
-.list, .offers {
+.list, .offers, .social {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -211,6 +212,61 @@ img {
   margin-bottom: 20px;
   padding: 0;
 }
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social__item + .social__item {
+  margin-left: 10px;
+}
+
+.social__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--social-color);
+  -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+.social__link:hover, .social__link:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.social__icon {
+  stroke: currentColor;
+}
+
+.footer__social-list {
+  padding: 0;
+}
+
+.social-list__href--dark {
+  background-color: var(--footer-social);
+  color: var(--background-color);
+}
+
 .hero {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -415,4 +471,30 @@ img {
   width: 50px;
   height: 1px;
   background-color: var(--offers-decorate-line);
+}
+
+.section--examples {
+  margin-top: 45px;
+  background-color: var(--section-background-color);
+}
+
+.section-title--examples {
+  text-align: left;
+}
+
+.button-link--examples {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.examples-img {
+  width: 100vw;
+}
+
+.image-link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0%;
 }/*# sourceMappingURL=main.css.map */
