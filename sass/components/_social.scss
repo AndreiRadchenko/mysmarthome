@@ -15,12 +15,12 @@
 }
 .social__link {
   display: inline-flex;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   //   border-radius: 50%;
-  color: var(--social-color);
+  border: 1px solid var(--social-color);
 
   @include customTransition(color, background-color);
 
@@ -31,13 +31,24 @@
     cursor: pointer;
   }
 }
+.social__icon--viber {
+  fill: #7360f2;
+}
+.social__icon--telegram {
+  fill: #229ed9;
+}
+.social__icon--whatsapp {
+  fill: #28d146;
+}
+.social__icon--messenger {
+  fill: #a334fa;
+}
 .social__icon {
-  stroke: currentColor;
+  //   fill: currentColor;
 }
 .footer__social-list {
   padding: 0;
 }
-.social-list__href--dark {
-  background-color: var(--footer-social);
-  color: var(--background-color);
+.button-link--tel {
+  margin-bottom: 20px;
 }

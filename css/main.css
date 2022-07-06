@@ -236,15 +236,15 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--social-color);
+  border: 1px solid var(--social-color);
   -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
@@ -254,17 +254,28 @@ img {
   cursor: pointer;
 }
 
-.social__icon {
-  stroke: currentColor;
+.social__icon--viber {
+  fill: #7360f2;
+}
+
+.social__icon--telegram {
+  fill: #229ed9;
+}
+
+.social__icon--whatsapp {
+  fill: #28d146;
+}
+
+.social__icon--messenger {
+  fill: #a334fa;
 }
 
 .footer__social-list {
   padding: 0;
 }
 
-.social-list__href--dark {
-  background-color: var(--footer-social);
-  color: var(--background-color);
+.button-link--tel {
+  margin-bottom: 20px;
 }
 
 .hero {
