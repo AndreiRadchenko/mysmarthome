@@ -2,23 +2,17 @@
   margin-top: 45px;
   background-color: var(--section-background-color);
 }
-.container--examples {
-}
 .section-title--examples {
   text-align: left;
 }
-.section-text {
-}
 .button-link--examples {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 300px;
 }
-.button-text {
-}
-.button-text--white {
-}
+
 .examples-img {
-  //   margin-top: 20px;
   width: 100vw;
 }
 .image-link {
@@ -27,4 +21,8 @@
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0%;
+}
+.button-link__icon-table {
+  stroke: white;
+  margin-right: 10px;
 }

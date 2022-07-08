@@ -17,7 +17,7 @@
   <body>
     <!-- -------------- header ----------------- -->
     <header class="header">
-      <div class="container">
+      <div class="header__container">
         <a href="" class="logo">
           <svg class="logo__svg" width="58" height="58">
             <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
@@ -28,7 +28,7 @@
           </div>
         </a>
         <nav class="navigation">
-          <ul class="menu">
+          <ul class="menu" data-menu>
             <li class="menu__item"><a href="./index.html" class="menu__link">Головна</a></li>
             <li class="menu__item"><a href="./about.html" class="menu__link">Про нас</a></li>
             <li class="menu__item"><a href="./services.html" class="menu__link">Послуги</a></li>
@@ -36,14 +36,24 @@
             <li class="menu__item"><a href="./contacts.html" class="menu__link">Контакти</a></li>
           </ul>
         </nav>
-        <div class="mobile-menue">
-          <svg class="hamburger" width="40" height="40">
-            <use href="./images/svg/icomoon/symbol-defs.svg#icon-hamburger"></use>
+        <button
+          class="hamburger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="hamburger__icon" width="40" height="40">
+            <use
+              class="hamburger__icon-menu"
+              href="./images/svg/icomoon/symbol-defs.svg#icon-hamburger"
+            ></use>
+            <use
+              class="hamburger__icon-close"
+              href="./images/svg/icomoon/symbol-defs.svg#icon-close"
+            ></use>
           </svg>
-          <svg class="cross" width="40" height="40">
-            <use href="./images/svg/icomoon/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </div>
+        </button>
       </div>
     </header>
     <main>
@@ -119,7 +129,11 @@
           <a
             href="https://docs.google.com/spreadsheets/d/1427UugK_wo20exgCGu2kdjkPVLyH0PwalCbbw0wI3ak/edit#gid=0"
             class="button-link button-link--examples"
-            >Переглянути на Google Docs</a
+          >
+            <svg class="button-link__icon-table" width="24" height="24">
+              <use href="./images/svg/icomoon/symbol-defs.svg#icon-table"></use>
+            </svg>
+            Переглянути на Google Docs</a
           >
           <a
             class="image-link"
@@ -138,34 +152,37 @@
           <p class="section-text">
             Маєте запитання стосовно систем розумного дому? Із задоволенням Вас проконсультуємо.
           </p>
-          <a href="" class="button-link button-link--tel"
-            ><span class="button-text button-text--white">Телефонуйте</span></a
+          <a href="tel:+380673329751" class="button-link button-link--tel">
+            <svg class="button-link__icon" width="24" height="24">
+              <use href="./images/svg/icomoon/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            Телефонуйте</a
           >
           <ul class="social">
             <li class="social__item">
-              <a href="" class="social__link">
-                <svg class="social__icon social__icon--viber" width="50" height="50">
+              <a href="viber://chat?number=%2B380673329751" target="_blank" class="social__link">
+                <svg class="social__icon social__icon--viber" width="40" height="40">
                   <use href="./images/svg/icomoon/symbol-defs.svg#icon-viber"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
-                <svg class="social__icon social__icon--telegram">
+              <a href="https://t.me/AndreiRadchenko" target="_blank" class="social__link">
+                <svg class="social__icon social__icon--telegram" width="40" height="40">
                   <use href="./images/svg/icomoon/symbol-defs.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
-                <svg class="social__icon social__icon--whatsapp">
+              <a href="https://wa.me/380673329751" target="_blank" class="social__link">
+                <svg class="social__icon social__icon--whatsapp" width="40" height="40">
                   <use href="./images/svg/icomoon/symbol-defs.svg#icon-whatsapp"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
-                <svg class="social__icon social__icon--messenger">
+              <a href="http://m.me/smart.home.kyiv" target="_blank" class="social__link">
+                <svg class="social__icon social__icon--messenger" width="40" height="40">
                   <use href="./images/svg/icomoon/symbol-defs.svg#icon-messenger"></use>
                 </svg>
               </a>
@@ -175,30 +192,47 @@
       </section>
     </main>
     <!-- -------------- footer ----------------- -->
-    <footer class="footer">
+    <footer class="section footer">
       <div class="container footer__container">
-        <a href="" class="logo">
-          <svg class="logo__svg" width="58" height="58">
-            <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
-          </svg>
-          <div class="logo__wrap">
-            <p class="logo__text">розумний</p>
-            <p class="logo__text--accent">дім</p>
-          </div>
-        </a>
-        <h2 class="moto">Розумний дім – комфорт доступний кожному</h2>
-        <div class="media">
-          <h3 class="media__title">Наші медіа</h3>
-          <div class="media__group">
-            <svg class="youtube" width="55" height="55">
-              <use href="./images/svg/icomoon/symbol-defs.svg#icon-youtube"></use>
+        <div class="footer__moto">
+          <a href="" class="logo logo--footer">
+            <svg class="logo__svg" width="58" height="58">
+              <use href="./images/svg/icomoon/symbol-defs.svg#icon-smart-home"></use>
             </svg>
-            <svg class="facebook" width="60" height="60">
-              <use href="./images/svg/icomoon/symbol-defs.svg#icon-facebook"></use>
-            </svg>
+            <div class="logo__wrap">
+              <p class="logo__text">розумний</p>
+              <p class="logo__text--accent">дім</p>
+            </div>
+          </a>
+          <h2 class="moto">комфорт доступний кожному</h2>
+          <div class="media">
+            <!-- <h3 class="media__title">Наші медіа</h3> -->
+            <div class="media__group">
+              <a
+                href="https://www.youtube.com/channel/UC7uVr9GRvSpF-9ihH9fwv8A/videos"
+                target="_blank"
+              >
+                <svg class="youtube" width="50" height="50">
+                  <use href="./images/svg/icomoon/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/smart.home.kyiv/">
+                <svg class="facebook" width="55" height="55">
+                  <use href="./images/svg/icomoon/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector('.header')
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
