@@ -3,10 +3,11 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100;
   border-bottom: 1px solid #ececec;
   background-color: var(--background-color);
   height: 90px;
+  opacity: 1;
   @media screen and (min-width: $tablet) {
     height: 90px;
   }
@@ -16,15 +17,69 @@
 .header__container {
   @extend .container;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: var(--background-color);
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.header__overlay {
+  z-index: 20;
+  background-color: var(--background-color);
+  @media screen and (max-width: 767px) {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+  }
+
+  @media screen and (min-width: $tablet) {
+    // display: none;
+    // height: fit-content;
+    display: inline-block;
+  }
+}
+.header__overlay > .container {
+  @media screen and (min-width: $tablet) {
+    width: fit-content;
+    padding: 0;
+  }
 }
 // =================== navigation =====================
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu--container {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    z-index: 10;
+    // background-color: teal;
+    background-color: var(--background-color);
+    padding: 0 15px;
+    // width: 100vw;
+    width: 100%;
+    transform: translateY(-101%);
+    transition: transform 500ms var(--timing-function);
+
+    &.is-open {
+      transform: translateY(0);
+    }
+  }
+  // @media screen and (max-width: 767px) {
+  //   width: 100%;
+  //   transform: translateY(-101%);
+  //   transition: transform 500ms var(--timing-function);
+
+  //   &.is-open {
+  //     transform: translateY(0);
+  //   }
+  // }
+  // width: $telephone;
+  @media screen and (min-width: $tablet) {
+    // display: none;
+  }
 }
 .menu {
   display: none;
@@ -34,43 +89,44 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: 63px;
-  &.is-open {
-    position: absolute;
-    top: 100%;
-    left: 0;
+  // @media screen and (max-width: $telephone) {
+  //   width: 100%;
+  // }
+
+  @media screen and (max-width: 767px) {
+    // display: none;
+
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    background-color: var(--background-color);
-    margin: 0;
     width: 100%;
-    padding: 15px 15px 0;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
+    margin-left: 63px;
   }
 }
 .menu__item {
-  position: relative;
-  margin-left: 50px;
-  .menu.is-open & {
+  @media screen and (max-width: 767px) {
     display: flex;
     margin-left: 0;
     border-bottom: 1px solid #ececec;
     border-bottom-width: 80%;
     width: 100%;
   }
-
-  &:first-child {
-    margin-left: 0;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 .menu__link {
   @extend .link;
   color: var(--primary-text-color);
   padding: 32px 0;
-  .menu.is-open & {
+  .menu--container.is-open & {
     // padding-right: 100%;
     display: block;
     width: 100%;
