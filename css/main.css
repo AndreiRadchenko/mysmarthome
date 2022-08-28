@@ -7,6 +7,7 @@
   --offers-decorate-line: rgba(255, 255, 255, 0.47);
   --section-background-color: #f3f8fb;
   --footer-background-color: #075aaf;
+  --card-button-hover: #f5f5f5;
   --accent-color: #2196f3;
   --primary-btn-hover-color: #188ce8;
   --background-color: #ffffff;
@@ -812,7 +813,8 @@ img {
 }
 
 .section--team {
-  padding: 40px, 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
   background-color: var(--section-background-color);
 }
 
@@ -821,7 +823,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    gap: 50px;
   }
 }
 
@@ -831,12 +833,62 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: var(--background-color);
+  z-index: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+.team__item[data-card-active=inactive] > .team__card-button::before {
+  content: "\f142";
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.team__item[data-card-active=active] > .team__card-button::before {
+  content: "\f00d";
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.team__item[data-card-active=inactive]::after {
+  opacity: 0.6;
+  -webkit-transform: translate3d(10px, 10px, 0);
+          transform: translate3d(10px, 10px, 0);
+}
+.team__item[data-card-active=active]::after {
+  opacity: 1;
+  -webkit-transform: translate3d(16px, 40px, 0);
+          transform: translate3d(16px, 40px, 0);
+}
+.team__item[data-card-active=active] > .team__social {
+  height: 40px;
+  visibility: visible;
+}
+.team__item[data-card-active=inactive] > .team__social {
+  height: 0px;
+  visibility: hidden;
+}
+.team__item::after {
+  background-color: var(--button-hover-color);
+  content: "";
+  display: block;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate3d(10px, 10px, 0);
+          transform: translate3d(10px, 10px, 0);
+  -webkit-transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
+  transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear, opacity 0.15s linear;
+  transition: transform 0.15s linear, opacity 0.15s linear, -webkit-transform 0.15s linear;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 767px) {
   .team__item + .team__item {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -856,6 +908,13 @@ img {
 
 .teamate__review {
   padding: 12px;
+  background-color: var(--background-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .teamate__name {
+    max-width: 180px;
+  }
 }
 
 .teamate__position {
@@ -863,6 +922,77 @@ img {
   margin-bottom: 12px;
 }
 
+.team__card-button {
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -ms-touch-action: none;
+      touch-action: none;
+  background-color: transparent;
+  border-radius: 50%;
+  display: none;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0.15em;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  width: 32px;
+  border: none;
+  outline: none;
+}
+.team__card-button::before {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  color: rgba(66, 66, 66, 0.87);
+  display: block;
+  font-size: 18px;
+  margin: auto;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.team__card-button:hover, .team__card-button:focus {
+  background-color: var(--card-button-hover);
+}
+@media screen and (max-width: 1024px) {
+  .team__card-button {
+    display: block;
+  }
+}
+
+.team__social {
+  position: absolute;
+  bottom: -40px;
+  right: -16px;
+  text-align: right;
+}
+
+.team__social-link {
+  font: var(--fa-brand);
+  font-family: "Font Awesome 6 Brands";
+  text-rendering: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 52px;
+  border-radius: 50%;
+}
+.team__social-link:nth-child(1)::after {
+  content: "\f409";
+}
+.team__social-link:nth-child(2)::after {
+  content: "\f39e";
+}
 .footer {
   background-color: var(--footer-background-color);
 }
