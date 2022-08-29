@@ -1132,6 +1132,94 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.hero--services {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-480x180.webp);
+  background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-480x180.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--services {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-960x360.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-960x360.webp);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero--services {
+    height: 280px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-768x280.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-768x280.webp);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero--services {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-1536x560.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-1536x560.webp);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero--services {
+    height: 400px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-1600x400.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-1600x400.webp);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero--services {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-1600x400.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-1600x400.webp);
+  }
+}
+
+.hero--gallery {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/gallery/hero-video-480x180.webp);
+  background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/gallery/hero-video-480x180.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--gallery {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/gallery/hero-video-960x360.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/gallery/hero-video-960x360.webp);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero--gallery {
+    height: 280px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/gallery/hero-video-768x280.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/gallery/hero-video-768x280.webp);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero--gallery {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/gallery/hero-video-1536x560.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/gallery/hero-video-1536x560.webp);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero--gallery {
+    height: 400px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/gallery/hero-video-1600x400.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/gallery/hero-video-1600x400.webp);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero--gallery {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/gallery/hero-video-1600x400.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/gallery/hero-video-1600x400.webp);
+  }
+}
+
 .footer {
   background-color: var(--footer-background-color);
 }
@@ -1198,4 +1286,48 @@ img {
 .facebook {
   fill: white;
   margin-left: 10px;
+}
+
+.hero-contacts {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/contacts/hero-contact2-480x180.webp);
+  background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/contacts/hero-contact2-480x180.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-contacts {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/contacts/hero-contact2-960x360.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/contacts/hero-contact2-960x360.webp);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero-contacts {
+    height: 280px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/contacts/hero-contact2-768x280.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/contacts/hero-contact2-768x280.webp);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero-contacts {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/contacts/hero-contact2-1536x560.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/contacts/hero-contact2-1536x560.webp);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero-contacts {
+    height: 400px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/contacts/hero-contact2-1600x400.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/contacts/hero-contact2-1600x400.webp);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero-contacts {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/contacts/hero-contact2-1600x400.webp);
+    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/contacts/hero-contact2-1600x400.webp);
+  }
 }/*# sourceMappingURL=main.css.map */
