@@ -65,7 +65,7 @@ img {
   height: auto;
 }
 
-.list, .team, .offers, .menu, .social {
+.list, .services, .team, .offers, .menu, .social {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -107,8 +107,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -118,7 +118,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section-text {
-    margin-bottom: 10px;
+    margin-bottom: 45px;
   }
 }
 
@@ -140,7 +140,7 @@ img {
   .section-title {
     font-size: 36px;
     line-height: setLineHeight(42px, 36px);
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
@@ -635,10 +635,37 @@ img {
       flex-wrap: wrap;
   gap: 15px;
 }
+@media screen and (min-width: 768px) {
+  .offers {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-preferred-size: calc((100% - 40px) / 3);
+        flex-basis: calc((100% - 40px) / 3);
+  }
+}
 
 .offers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 60px 40px;
   background-color: var(--background-blue);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .offers__header {
@@ -659,6 +686,16 @@ img {
   width: 50px;
   height: 1px;
   background-color: var(--offers-decorate-line);
+}
+@media screen and (min-width: 768px) {
+  .offers__header {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offers__header {
+    width: 300px;
+  }
 }
 
 .button-link--offers {
@@ -1174,6 +1211,79 @@ img {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/services/hero-services-1600x400.webp);
     background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/services/hero-services-1600x400.webp);
   }
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #075aae;
+  padding: 35px 20px 20px;
+  background-color: transparent;
+  background-image: linear-gradient(140deg, #075aae 67%, #ffffff 0%);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+@media screen and (max-width: 767px) {
+  .services__item + .services__item {
+    margin-top: 45px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .services__item {
+    -ms-flex-preferred-size: calc((100% - 20px) / 2);
+        flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__item {
+    max-width: calc((100% - 40px) / 3);
+  }
+}
+
+.service__button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__img {
+  width: 70%;
+  border-radius: 50%;
 }
 
 .hero--gallery {

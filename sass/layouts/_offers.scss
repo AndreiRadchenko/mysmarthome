@@ -3,10 +3,20 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: calc((100% - 40px) / 3);
+  }
 }
 .offers__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 60px 40px;
   background-color: var(--background-blue);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .offers__header {
   position: relative;
@@ -25,6 +35,12 @@
     width: 50px;
     height: 1px;
     background-color: var(--offers-decorate-line);
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 300px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 300px;
   }
 }
 .button-link--offers {
