@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Розумний дім – комфорт доступний кожному</title>
     <link rel="icon" href="./images/svg/smart-home.svg" sizes="32x32" />
-    <script src="https://use.fontawesome.com/4c41adc881.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Спочатку нормалізатор -->
     <link
       rel="stylesheet"
@@ -116,12 +122,62 @@
       <section class="section section--responses">
         <div class="container container--responses">
           <h2 class="section-title section-title--responses">Відгуки</h2>
-          <p class="responses-text">
-            "Найзручніші рішення для мене, реалізовані в нашому приватному будинку – відкриття
-            хвіртки за допомогою системи розпізнавання обличчя та вхідних дверей за допомогою NFC
-            модуля телефону. ”
-          </p>
-          <p class="section-text section-text--responses">Іра Пшенична смт. Велика Димерка</p>
+          <div class="siema">
+            <div class="response">
+              <img
+                srcset="
+                  ./images/responses/doorbell-480-min.webp 480w,
+                  ./images/responses/doorbell-960-min.webp 960w
+                "
+                sizes=" (min-width: 768px) 960px, 480px"
+                class="response__photo"
+                src="./images/responses/doorbell-480-min.webp"
+                alt="Дверний дзвінок"
+              />
+              <div class="response__text-wrap">
+                <div class="response__naw-arrows">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="backdrop">
+                  <p class="responses-text">
+                    "Найзручніші рішення для мене, реалізовані в нашому приватному будинку –
+                    відкриття хвіртки за допомогою системи розпізнавання обличчя та вхідних дверей
+                    за допомогою NFC модуля телефону. ”
+                  </p>
+                  <p class="section-text section-text--responses">
+                    Іра Пшенична смт. Велика Димерка
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="response">
+              <img
+                srcset="
+                  ./images/responses/gate-480.webp 480w,
+                  ./images/responses/gate-960.webp 960w
+                "
+                sizes=" (min-width: 768px) 960px, 480px"
+                class="response__photo"
+                src="./images/responses/gate-480.webp"
+                alt="Ворота"
+              />
+              <div class="response__text-wrap">
+                <div class="response__naw-arrows">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="backdrop">
+                  <p class="responses-text">
+                    "Ворота та автоматика, це евріка! Коли приїзджали гості, завжди бігав та
+                    відкривав ворота, це капець. Зараз, без зусиль, одним натисканням на телефоні, а
+                    коли сам за кермом, то з панелі автівки відкриваю. Дякую хлопці, за роботу!”
+                  </p>
+                  <p class="section-text section-text--responses">Павло Романченко м. Васильків</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- -------------- examples ---------------- -->
@@ -239,6 +295,8 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/siema.min.js"></script>
+    <script src="./js/mySiema.js" type="module"></script>
   </body>
 </html>

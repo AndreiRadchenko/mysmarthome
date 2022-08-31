@@ -707,44 +707,17 @@ img {
 }
 
 .section--responses {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   max-width: 480px;
   height: 118vw;
   min-height: 470px;
-  padding: 70px 40px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(7, 90, 174, 0.7)), to(rgba(7, 90, 174, 0.7))), url(../images/responses/doorbell-480-min.jpg);
-  background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)), url(../images/responses/doorbell-480-min.jpg);
+  margin: 0 auto;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .section--responses {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(7, 90, 174, 0.7)), to(rgba(7, 90, 174, 0.7))), url(../images/responses/doorbell-480-min.jpg);
-    background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)), url(../images/responses/doorbell-480-min.jpg);
-  }
-}
-@media screen and (min-width: 481px) {
-  .section--responses {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/hero-main/hero-main-768x400-min.jpg);
-    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/hero-main/hero-main-768x400-min.jpg);
-  }
-}
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .section--responses {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/hero-main/hero-main-1536x800-min.jpg);
-    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/hero-main/hero-main-1536x800-min.jpg);
-  }
-}
-@media screen and (min-width: 769px) {
-  .section--responses {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(7, 90, 174, 0)), to(#075aae)), url(../images/hero-main/hero-main-1600x600-min.jpg);
-    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%), url(../images/hero-main/hero-main-1600x600-min.jpg);
-  }
+
+.response {
+  position: relative;
 }
 
 .container--responses {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,8 +730,47 @@ img {
           justify-content: space-between;
 }
 
-.section-title--responses {
+.response__text-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(7, 90, 174, 0.5)), to(rgba(7, 90, 174, 0.8)));
+  background-image: linear-gradient(180deg, rgba(7, 90, 174, 0.5) 5%, rgba(7, 90, 174, 0.8));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.response__text-wrap > .backdrop {
+  padding: 20px 15px;
+}
+
+.response__naw-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 30px;
+  font-weight: 200;
   color: var(--secondary-text-color);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.section-title--responses {
+  color: var(--main-text-color);
   text-align: left;
   margin-bottom: 40px;
 }

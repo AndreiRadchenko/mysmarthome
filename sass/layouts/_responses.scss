@@ -1,41 +1,67 @@
 .section--responses {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // position: relative;
+
   max-width: 480px;
   height: 118vw;
   min-height: 470px;
-  padding: 70px 40px;
+  margin: 0 auto;
+}
+.response {
+  // background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)),
+  //   url(../images/responses/doorbell-480-min.jpg);
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)),
+  //     url(../images/responses/doorbell-480-min.jpg);
+  // }
 
-  background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)),
-    url(../images/responses/doorbell-480-min.jpg);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: linear-gradient(90deg, rgba(7, 90, 174, 0.7), rgba(7, 90, 174, 0.7)),
-      url(../images/responses/doorbell-480-min.jpg);
-  }
-
-  @media screen and (min-width: 481px) {
-    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
-      url(../images/hero-main/hero-main-768x400-min.jpg);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
-        url(../images/hero-main/hero-main-1536x800-min.jpg);
-    }
-  }
-  @media screen and (min-width: 769px) {
-    background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
-      url(../images/hero-main/hero-main-1600x600-min.jpg);
-  }
+  // @media screen and (min-width: 481px) {
+  //   background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
+  //     url(../images/hero-main/hero-main-768x400-min.jpg);
+  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
+  //       url(../images/hero-main/hero-main-1536x800-min.jpg);
+  //   }
+  // }
+  // @media screen and (min-width: 769px) {
+  //   background-image: linear-gradient(270deg, rgba(7, 90, 174, 0) 0%, #075aae 100%),
+  //     url(../images/hero-main/hero-main-1600x600-min.jpg);
+  // }
+  position: relative;
 }
 .container--responses {
-  height: 100%;
+  // height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.section-title--responses {
+.response__text-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(180deg, rgba(7, 90, 174, 0.5) 5%, rgba(7, 90, 174, 0.8));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  & > .backdrop {
+    // backdrop-filter: blur(2px);
+    padding: 20px 15px;
+  }
+}
+.response__naw-arrows {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 200;
   color: var(--secondary-text-color);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.section-title--responses {
+  color: var(--main-text-color);
   text-align: left;
   margin-bottom: 40px;
 }
